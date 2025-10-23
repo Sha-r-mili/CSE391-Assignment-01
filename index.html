@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sharmili Alam Prova's Personal Homepage">
+    <meta name="author" content="Sharmili Alam Prova">
+    <title>Sharmili Alam Prova - Personal Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">☀️</button>
+
+    <!-- Intro Page -->
+    <div id="introPage" class="intro-container">
+        <div class="corner-decoration corner-top-left"></div>
+        <div class="corner-decoration corner-top-right"></div>
+        <div class="corner-decoration corner-bottom-left"></div>
+        <div class="corner-decoration corner-bottom-right"></div>
+        
+        <div class="bookmark"></div>
+        
+        <div class="header-text">
+            Hi There!
+            <span class="subtitle">I am Sharmili Alam Prova</span>
+        </div>
+        
+        <div class="flower-container">
+            <img id="flower" class="flower-img" src="./flower.png" alt="Decorative Flower Image">
+        </div>
+
+        <div class="title-section">
+            <div class="title">
+                Interested<br>
+                to know<br>
+                me?
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="button yes-button" onclick="openJournal()">Yes</button>
+            <button class="button no-button" onclick="openClosedBook()">No</button>
+        </div>
+        
+        <div class="binding"></div>
+        
+        <div class="page-edge page-edge-right"></div>
+        <div class="page-edge page-edge-bottom"></div>
+    </div>
+
+    <!-- Journal Pages -->
+    <div id="journalPages" class="journal-container">
+        <div class="book-open">
+            <!-- Left Page -->
+            <div class="page page-left">
+                <div class="photo-section">
+                    <img src="./self.png" alt="Sharmili Alam Prova" class="profile-photo">
+                    <h1 class="name-title">Sharmili Alam Prova</h1>
+                    <p class="tagline">Web Developer | Animal Lover | INFJ</p>
+                </div>
+
+                <div class="quote-box">
+                    "People live their lives bound by what they accept as correct and true. That’s how they define reality."
+                    <br><em>— Itachi Uchiha (Naruto)</em>
+                </div>
+
+                <div class="content-section">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="info-text">
+                        Hello! I'm <strong>Sharmili Alam Prova</strong> student at 
+                        <a href="https://www.bracu.ac.bd" target="_blank" style="color: #6b6b6b; text-decoration: underline;">BRAC University</a>, 
+                        a creator driven by curiosity and the desire to turn ideas into meaningful experiences. I find beauty in solving problems with clarity and purpose, combining creativity and logic to bring ideas to life. I aspire to travel the world, to see how different places and perspectives shape the way we think, create, and connect. For me, growth isn’t just about learning new skills — it’s about staying curious, inspired, and open to the endless possibilities around us.
+                    </p>
+                    <p class="info-text">
+                        I believe in continuous learning and pushing the boundaries of what's possible with code. 
+                        My journey in programming has been filled with exciting challenges and rewarding discoveries.
+                    </p>
+                </div>
+
+                <div class="content-section">
+                    <h2 class="section-title">Education</h2>
+                    <p class="info-text">
+                        <strong>BRAC University</strong><br>
+                        Bachelor of Science in Computer Science<br>
+                        <em>Currently pursuing my degree with a focus on Web Development and Software Engineering</em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Center Binding -->
+            <div class="center-binding"></div>
+
+            <!-- Right Page -->
+            <div class="page page-right">
+                <div class="content-section">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <ul class="skills-list">
+                        <li><strong>Programming Languages:</strong> Python, JavaScript, Java</li>
+                        <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Tools & Frameworks:</strong> Git, Node.js</li>
+                        <li><strong>Database:</strong> MySQL</li>
+                        <li><strong>Design:</strong> Figma, Adobe Photoshop</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2 class="section-title">Interests & Hobbies</h2>
+                    <p class="info-text">
+                        When I'm not coding, you can find me: 
+                    </p>
+                    <ul class="skills-list">
+                        <li>Crocheting & Threading</li>
+                        <li>Watching Movies mostly Anime</li>
+                        <li>Reading Books</li>
+                        <li>Photography & Digital Art</li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2 class="section-title">Top 5 Favorite Books</h2>
+                    <ul class="skills-list">
+                        <li>The Pragmatic Programmer by Andy Hunt</li>
+                        <li>Clean Code by Robert C. Martin</li>
+                        <li>1984 by George Orwell</li>
+                        <li>The Alchemist by Paulo Coelho</li>
+                        <li>Sapiens by Yuval Noah Harari</li>
+                    </ul>
+                </div>
+
+                <div class="content-section links-section">
+                    <h2 class="section-title">Connect With Me</h2>
+                    <a href="https://www.bracu.ac.bd" target="_blank">BRAC University</a>
+                    <a href="https://discord.gg/zRXBYPjP" target="_blank">CSE 391 Discord</a>
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="mailto:sharmili.prova@gmail.com">Email Me</a>
+                </div>
+
+                <footer>
+                    <p>&copy; 2025 Sharmili Alam Prova. All rights reserved.</p>
+                    <p id="pageInfo"></p>
+                </footer>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="closeJournal()">← Back to Cover</button>
+    </div>
+
+    <!-- Closed Book Page -->
+    <div id="closedBook" class="closed-book hidden">
+        <div class="corner-decoration corner-top-left"></div>
+        <div class="corner-decoration corner-top-right"></div>
+        <div class="corner-decoration corner-bottom-left"></div>
+        <div class="corner-decoration corner-bottom-right"></div>
+
+        <!-- Bookmark on the opposite side -->
+        <div class="bookmark-right"></div>
+
+        <!-- Flower -->
+        <div class="flower-container">
+            <img class="flower-img" src="./flower.png" alt="Decorative Flower Image">
+        </div>
+
+        <!-- Message -->
+        <div class="maybe-text">Maybe Another Time!</div>
+
+        <!-- Binding on the right -->
+        <div class="binding-right"></div>
+        <div class="page-edge page-edge-bottom"></div>
+
+        <!-- Back to intro button -->
+        <button class="back-button" onclick="backToIntro()">← Back to Cover</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
