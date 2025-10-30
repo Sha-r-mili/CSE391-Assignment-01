@@ -11,6 +11,22 @@
 <body>
     <button class="theme-toggle" onclick="toggleTheme()">☀️</button>
 
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar hidden">
+        <div class="nav-container">
+            <div class="nav-brand" onclick="scrollToTop()">Sharmili Alam Prova</div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#books" class="nav-link">Books</a></li>
+                <li><a href="#activities" class="nav-link">Activities</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Intro Page -->
     <div id="introPage" class="intro-container">
         <div class="corner-decoration corner-top-left"></div>
@@ -60,16 +76,19 @@
                 </div>
 
                 <div class="quote-box">
-                    "People live their lives bound by what they accept as correct and true. That’s how they define reality."
+                    "People live their lives bound by what they accept as correct and true. That's how they define reality."
                     <br><em>— Itachi Uchiha (Naruto)</em>
                 </div>
 
-                <div class="content-section">
+                <div id="about" class="content-section">
                     <h2 class="section-title">About Me</h2>
+                    <div class="section-image-container">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=300&fit=crop" alt="Coding workspace" class="section-image">
+                    </div>
                     <p class="info-text">
                         Hello! I'm <strong>Sharmili Alam Prova</strong> student at 
                         <a href="https://www.bracu.ac.bd" target="_blank" style="color: #6b6b6b; text-decoration: underline;">BRAC University</a>, 
-                        a creator driven by curiosity and the desire to turn ideas into meaningful experiences. I find beauty in solving problems with clarity and purpose, combining creativity and logic to bring ideas to life. I aspire to travel the world, to see how different places and perspectives shape the way we think, create, and connect. For me, growth isn’t just about learning new skills — it’s about staying curious, inspired, and open to the endless possibilities around us.
+                        a creator driven by curiosity and the desire to turn ideas into meaningful experiences. I find beauty in solving problems with clarity and purpose, combining creativity and logic to bring ideas to life. I aspire to travel the world, to see how different places and perspectives shape the way we think, create, and connect. For me, growth isn't just about learning new skills — it's about staying curious, inspired, and open to the endless possibilities around us.
                     </p>
                     <p class="info-text">
                         I believe in continuous learning and pushing the boundaries of what's possible with code. 
@@ -77,23 +96,50 @@
                     </p>
                 </div>
 
-                <div class="content-section">
+                <div id="education" class="content-section">
                     <h2 class="section-title">Education</h2>
-                    <p class="info-text">
-                        <strong>BRAC University</strong><br>
-                        Bachelor of Science in Computer Science<br>
-                        <em>Currently pursuing my degree with a focus on Web Development and Software Engineering</em>
+                    <div class="section-image-container">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=300&fit=crop" alt="Education" class="section-image">
+                    </div>
+                    <div class="education-table-container">
+                        <table class="education-table">
+                            <thead>
+                                <tr>
+                                    <th>Degree/Certificate</th>
+                                    <th>Institution</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>BSc in Computer Science</strong></td>
+                                    <td>BRAC University</td>
+                                    <td>Currently Pursuing</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><strong>Higher Secondary Certificate (H.S.C)</strong></td>
+                                    <td>Viqarunnisa Noon School & College</td>
+                                    <td>GPA- 5.00 & Talentpool Scholarship</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Secondary School Certificate (S.S.C)</strong></td>
+                                    <td>Ideal School & College</td>
+                                    <td>GPA- 5.00 & Talentpool Scholarship</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="info-text" style="margin-top: 15px;">
+                        <em>Currently focused on Web Development and Software Engineering at BRAC University</em>
                     </p>
                 </div>
-            </div>
 
-            <!-- Center Binding -->
-            <div class="center-binding"></div>
-
-            <!-- Right Page -->
-            <div class="page page-right">
-                <div class="content-section">
+                <div id="skills" class="content-section">
                     <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-image-container">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=300&fit=crop" alt="Programming" class="section-image">
+                    </div>
                     <ul class="skills-list">
                         <li><strong>Programming Languages:</strong> Python, JavaScript, Java</li>
                         <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript</li>
@@ -102,9 +148,18 @@
                         <li><strong>Design:</strong> Figma, Adobe Photoshop</li>
                     </ul>
                 </div>
+            </div>
 
-                <div class="content-section">
+            <!-- Center Binding -->
+            <div class="center-binding"></div>
+
+            <!-- Right Page -->
+            <div class="page page-right">
+                <div id="interests" class="content-section">
                     <h2 class="section-title">Interests & Hobbies</h2>
+                    <div class="section-image-container">
+                        <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=600&h=300&fit=crop" alt="Hobbies" class="section-image">
+                    </div>
                     <p class="info-text">
                         When I'm not coding, you can find me: 
                     </p>
@@ -113,28 +168,107 @@
                         <li>Watching Movies mostly Anime</li>
                         <li>Reading Books</li>
                         <li>Photography & Digital Art</li>
-                        <li></li>
                     </ul>
                 </div>
 
-                <div class="content-section">
-                    <h2 class="section-title">Top 5 Favorite Books</h2>
+                <div id="books" class="content-section">
+                    <h2 class="section-title">Top 10 Favorite Books</h2>
+                    <div class="section-image-container">
+                        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=600&h=300&fit=crop" alt="Books" class="section-image">
+                    </div>
                     <ul class="skills-list">
-                        <li>The Pragmatic Programmer by Andy Hunt</li>
-                        <li>Clean Code by Robert C. Martin</li>
-                        <li>1984 by George Orwell</li>
-                        <li>The Alchemist by Paulo Coelho</li>
-                        <li>Sapiens by Yuval Noah Harari</li>
+                        <li><i>The Alchemist</i> by Paulo Coelho</li>
+                        <li><i>Sapiens</i> by Yuval Noah Harari</li>
+                        <li><i>A Game of Thrones</i> by George R. R. Martin</li>
+                        <li><i>The Hunger Games</i> by Suzanne Collins</li>
+                        <li><i>Clean Code</i> by Robert C. Martin</li>
+                        <li><i>1984</i> by George Orwell</li>
+                        <li><i>Harry Potter</i> by J.K.Rowling</li>
+                        <li><i>Attack On Titan</i> by Hajime Isayama</li>
+                        <li><i>Shesher Kobita</i> by Rabindranath Thakur</li>
+                        <li><i>The Three Investigators</i> by Robert Arthur</li>
+                        
                     </ul>
                 </div>
 
-                <div class="content-section links-section">
-                    <h2 class="section-title">Connect With Me</h2>
-                    <a href="https://www.bracu.ac.bd" target="_blank">BRAC University</a>
-                    <a href="https://discord.gg/zRXBYPjP" target="_blank">CSE 391 Discord</a>
-                    <a href="https://github.com" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                    <a href="mailto:sharmili.prova@gmail.com">Email Me</a>
+                <div id="activities" class="content-section categorized-links">
+                    <h2 class="section-title">My Activities & Interests</h2>
+                    
+                    <div class="link-category">
+                        <h3 class="category-title">🎨 Creative Hobbies</h3>
+                        <div class="category-links">
+                            <a href="https://www.ravelry.com" target="_blank">Crochet Community</a>
+                            <a href="https://www.pinterest.com/ideas/diy-and-crafts/934876475639/" target="_blank">Craft Inspiration</a>
+                            <a href="https://www.behance.net" target="_blank">Digital Art Gallery</a>
+                            <a href="https://unsplash.com" target="_blank">Photography</a>
+                        </div>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="category-title">🎬 Entertainment</h3>
+                        <div class="category-links">
+                            <a href="https://myanimelist.net" target="_blank">MyAnimeList</a>
+                            <a href="https://www.crunchyroll.com" target="_blank">Anime Streaming</a>
+                            <a href="https://www.goodreads.com" target="_blank">Book Reviews</a>
+                        </div>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="category-title">⚽ Sports & Wellness</h3>
+                        <div class="category-links">
+                            <a href="https://www.strava.com" target="_blank">Fitness Tracking</a>
+                            <a href="https://www.youtube.com/fitness" target="_blank">Workout Videos</a>
+                            <a href="https://www.headspace.com" target="_blank">Mindfulness</a>
+                        </div>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="category-title">🎓 Extracurricular</h3>
+                        <div class="category-links">
+                            <a href="https://discord.gg/zRXBYPjP" target="_blank">CSE 391 Discord</a>
+                            <a href="https://github.com" target="_blank">GitHub Projects</a>
+                            <a href="https://dev.to" target="_blank">Dev Community</a>
+                            <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact" class="content-section">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-image-container">
+                        <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=600&h=300&fit=crop" alt="Contact" class="section-image">
+                    </div>
+                    
+                    <div class="contact-links links-section">
+                        <a href="https://www.bracu.ac.bd" target="_blank">BRAC University</a>
+                        <a href="https://github.com" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
                 </div>
 
                 <footer>
@@ -154,22 +288,17 @@
         <div class="corner-decoration corner-bottom-left"></div>
         <div class="corner-decoration corner-bottom-right"></div>
 
-        <!-- Bookmark on the opposite side -->
         <div class="bookmark-right"></div>
 
-        <!-- Flower -->
         <div class="flower-container">
             <img class="flower-img" src="./flower.png" alt="Decorative Flower Image">
         </div>
 
-        <!-- Message -->
         <div class="maybe-text">Maybe Another Time!</div>
 
-        <!-- Binding on the right -->
         <div class="binding-right"></div>
         <div class="page-edge page-edge-bottom"></div>
 
-        <!-- Back to intro button -->
         <button class="back-button" onclick="backToIntro()">← Back to Cover</button>
     </div>
 
